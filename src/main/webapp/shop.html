@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+<title>Магазин</title>
+<link rel="stylesheet" href="static/styles/shop-style.css" type="text/css" />
+<script src="http://www.w3schools.com/lib/w3data.js"></script>
+</head>
+<body>
+	<header>
+		<div w3-include-html="header.html"></div>
+	</header>
+	<main>
+		<div id="first-container">
+			<div id="first-game">
+				<img id="fall-guys-photo" src="static/images/fall_guys.jpg" alt="game photo">
+				<div id="gray-rectangle"></div>
+				<div id="discount">
+					<p>-85%
+					<p>
+					<p id="price">4,55 $</p>
+				</div>
+			</div>
+			<div id="second-game">
+				<img id="second-game-photo" src="static/images/unpacking.jpg" alt="game photo">
+				<div id="second-gray-rectangle">
+					<p>7,65 $</p>
+				</div>
+			</div>
+			<div id="third-game">
+				<img id="third-game-photo" src="static/images/apex.jpg" alt="game photo">
+				<div id="third-gray-rectangle">
+					<p>Бесплатно</p>
+				</div>
+			</div>
+		</div>
+		<div id="second-container">
+			<img id="cd_project_logo" src="static/images/cd_project_logo.png" alt="company logo">
+			<h3 id="game-name">Cyberpunk 2077</h3>
+			<p id="genre-description"><b>Жанры:</b> Компьютерная ролевая игра, Квест, Action, Шутер, Файтинг</p>
+			<p id=description>Cyberpunk 2077 — компьютерная игра в жанре экшен в открытом мире, разработанная и изданная
+				польской студией CD Projekt. Действие игры происходит в 2077 году в Найт-Сити, вымышленном
+				североамериканском городе из вселенной Cyberpunk</p>
+			<iframe width="800" height="440" src="https://www.youtube.com/embed/2SHmQNG44sI"
+				title="YouTube video player" frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen></iframe>
+		</div>
+	</main>
+	<div w3-include-html="footer.html"></div>
+	<script>
+		w3IncludeHTML();
+	</script>
+</body>
+</html>

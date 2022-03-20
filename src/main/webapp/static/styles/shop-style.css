@@ -1,0 +1,199 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body {
+	background: linear-gradient(298.33deg, #FFB800 42.18%, #FBD03B 70.66%);
+	margin-left: 0px;
+}
+
+p {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 29px;
+	align-items: center;
+	color: #FFFFFF;
+}
+
+h3 {
+	position: absolute;
+	width: 156px;
+	height: 33px;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 900;
+	font-size: 15px;
+	line-height: 18px;
+	display: flex;
+	align-items: center;
+	color: #FFFFFF;
+}
+
+#first-container {
+	position: relative;
+	width: 1170px;
+	height: 530px;
+	margin: auto;
+	top: 200px;
+	background: #000;
+	border-radius: 20px;
+}
+
+#fall-guys-photo {
+	position: absolute;
+	width: 610px;
+	height: 408px;
+	margin-left: 2%;
+	margin-top: 2%;
+}
+
+#gray-rectangle {
+	position: absolute;
+	width: 610px;
+	height: 62px;
+	left: 23.5px;
+	top: 431px;
+	background: #606060;
+}
+
+#discount {
+	position: absolute;
+	width: 194px;
+	height: 49.09px;
+	left: 32px;
+	top: 438px;
+	background: #709B00;
+	border-radius: 20px;
+}
+
+#discount>p {
+	justify-content: center;
+	margin: 10px 0;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 24px;
+	line-height: 29px;
+	display: flex;
+	align-items: center;
+	color: #FFFFFF;
+}
+
+#price {
+	position: absolute;
+	font-family: 'Montserrat';
+	color: #FFF;
+	top: 0px;
+	left: 486px;
+	width: 100px;
+}
+
+#second-game-photo {
+	position: absolute;
+	width: 452px;
+	height: 182px;
+	left: 684px;
+	top: 23px;
+}
+
+#second-gray-rectangle {
+	position: absolute;
+	width: 452px;
+	height: 62px;
+	left: 684px;
+	top: 205px;
+	background: #606060;
+}
+
+#second-gray-rectangle>p {
+	position: absolute;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 800;
+	color: #FFF;
+	text-align: center;
+	top: 4px;
+	left: 371px;
+	font-weight: 800;
+}
+
+#third-game-photo {
+	position: absolute;
+	width: 451px;
+	height: 180px;
+	left: 685px;
+	top: 284px;
+}
+
+#third-gray-rectangle {
+	position: absolute;
+	width: 452px;
+	height: 43px;
+	left: 685px;
+	top: 449px;
+	background: #606060;
+}
+
+#third-gray-rectangle>p {
+	position: absolute;
+	width: 99px;
+	height: 27px;
+	left: 327px;
+	top: -10px;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 21px;
+	display: flex;
+	align-items: center;
+	color: #FFFFFF;
+}
+
+#second-container {
+	position: relative;
+	width: 1170px;
+	height: 530px;
+	margin: auto;
+	top: 260px;
+	background: #000;
+	border-radius: 20px;
+	margin-bottom: 30%;
+}
+
+#cd_project_logo {
+	position: absolute;
+	width: 111px;
+	height: 106px;
+	left: 35px;
+	top: 30px;
+}
+
+iframe {
+	margin-left: 28%;
+	margin-top: 3%;
+}
+
+#description {
+	position: absolute;
+	width: 282px;
+	top: 248px;
+	left: 18px;
+}
+
+#genre-description {
+	position: absolute;
+	width: 275px;
+	top: 151px;
+	left: 18px;
+}
+
+#game-name {
+	position: absolute;
+	top: 60px;
+	left: 156px;
+}
