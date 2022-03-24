@@ -2,6 +2,7 @@
 
 body {
 	background: linear-gradient(298.33deg, #FFB800 42.18%, #FBD03B 70.66%);
+	margin: 0;
 }
 
 #map {
@@ -16,11 +17,11 @@ body {
 }
 
 main {
-	position: absolute;
+	position: relative;
 	width: 1115px;
-	height: 630px;
+	height: 90%;
 	left: 242px;
-	top: 100px;
+	top: 10px;
 	background: linear-gradient(126.6deg, #FFFFFF 62.97%, #DAD3D3 88.63%);
 	box-shadow: 10px 7px 4px rgba(0, 0, 0, 0.4);
 	border-radius: 68px;
@@ -53,4 +54,102 @@ tr {
 
 #info {
 	width: 40%
+}
+
+#contact-us {
+	position: absolute;
+	width: 717px;
+	height: 290px;
+	left: 199px;
+	top: 334px;
+	border: 4px solid #000000;
+	box-sizing: border-box;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+}
+
+#name {
+	position: absolute;
+	width: 300px;
+	height: 47px;
+	left: 50px;
+	top: 75px;
+	background: #FFFFFF;
+	border: 1px solid #000000;
+	box-sizing: border-box;
+}
+
+#phone {
+	position: absolute;
+	width: 300px;
+	height: 47px;
+	left: 50px;
+	top: 140px;
+	background: #FFFFFF;
+	border: 1px solid #000000;
+	box-sizing: border-box;
+}
+
+#msg {
+	position: absolute;
+	width: 300px;
+	height: 50px;
+	left: 50px;
+	top: 205px;
+	background: #FFFFFF;
+	border: 1px solid #000000;
+	box-sizing: border-box;
+}
+
+#text-contact {
+	position: relative;
+	left: 50px;
+}
+
+#send {
+	position: absolute;
+	width: 186px;
+	height: 47px;
+	left: 454px;
+	top: 70px;
+	background: #709B00;
+	border: 1px solid #000000;
+	box-sizing: border-box;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+	position: absolute;
+	width: 101px;
+	height: 26px;
+	font-family: 'Ubuntu';
+	font-style: normal;
+	font-weight: 500;
+	text-align: center;
+	font-size: 14px;
+	line-height: 21px;
+	color: #FFFFFF;
+	font-size: 14px;
+}
+
+#clear-btn {
+	position: absolute;
+	left: 454px;
+	top: 140px;
+	height: 47px;
+	background: #D01717;
+	border: 1px solid #000000;
+	box-sizing: border-box;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+	position: absolute;
+	width: 101px;
+	height: 26px;
+	font-family: 'Ubuntu';
+	font-style: normal;
+	text-align: center;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 21px;
+	color: #FFFFFF;
 }

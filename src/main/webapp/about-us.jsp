@@ -1,15 +1,15 @@
-<!DOCTYPE html>
+<%@page pageEncoding="UTF-8" contentType="text/html; charset=UTF-8"%>
+<%@ page isELIgnored="false"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
 <title>О нас</title>
 <link rel="stylesheet" href="static/styles/about-us-style.css" type="text/css" />
-<script src="http://www.w3schools.com/lib/w3data.js"></script>
+ <link rel="shortcut icon" href="static/images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-	<header>
-		<div w3-include-html="header.html"></div>
-	</header>
+	<jsp:include page="header.jsp"></jsp:include>
 	<main>
 		<h1 id="years-on-market-number">7</h1>
 		<h6 id="years-on-market-text">Лет на рынке</h6>
@@ -22,9 +22,6 @@
 		<div id="robot-circle"></div>
 		<img id="robot-photo" src="static/images/robot.png" alt="robot photo">
 	</main>
-	<div w3-include-html="footer.html"></div>
-	<script>
-		w3IncludeHTML();
-	</script>
+	<jsp:include page="footer.jsp"></jsp:include>
 </body>
 </html>

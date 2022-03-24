@@ -1,199 +1,118 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-
 body {
 	background: linear-gradient(298.33deg, #FFB800 42.18%, #FBD03B 70.66%);
-	margin-left: 0px;
+	margin: 0;
 }
 
-p {
-	font-family: 'Montserrat';
-	font-style: normal;
-	font-weight: 500;
-	font-size: 15px;
-	line-height: 29px;
-	align-items: center;
-	color: #FFFFFF;
-}
-
-h3 {
-	position: absolute;
-	width: 156px;
-	height: 33px;
-	font-family: 'Montserrat';
-	font-style: normal;
-	font-weight: 900;
-	font-size: 15px;
-	line-height: 18px;
+main {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
-	color: #FFFFFF;
+	row-gap: 100px;
 }
 
-#first-container {
+.content-background {
 	position: relative;
 	width: 1170px;
 	height: 530px;
-	margin: auto;
-	top: 200px;
 	background: #000;
 	border-radius: 20px;
 }
 
-#fall-guys-photo {
-	position: absolute;
-	width: 610px;
-	height: 408px;
+.content-background:first-child {
+	margin-top: 5%;
+}
+
+.content-background:last-child {
+	margin-bottom: 5%;
+}
+
+.content-background:first-child>div[name=first-game] {
 	margin-left: 2%;
 	margin-top: 2%;
+	width: 52.2%;
 }
 
-#gray-rectangle {
-	position: absolute;
+.content-background:first-child>div[name=first-game]>img {
+	width: 610px;
+	height: 408px;
+}
+
+.content-background:first-child>div[name=first-game]>div[name=gray-block] {
+	display: flex;
+	align-items: center;
 	width: 610px;
 	height: 62px;
-	left: 23.5px;
-	top: 431px;
 	background: #606060;
 }
 
-#discount {
-	position: absolute;
+.content-background:first-child>div[name=first-game]>div[name=gray-block]>div[name=discount-block] {
 	width: 194px;
 	height: 49.09px;
-	left: 32px;
-	top: 438px;
 	background: #709B00;
 	border-radius: 20px;
-}
-
-#discount>p {
-	justify-content: center;
-	margin: 10px 0;
-	font-family: 'Montserrat';
-	font-style: normal;
-	font-weight: 800;
-	font-size: 24px;
-	line-height: 29px;
+	margin-left: 1%;
 	display: flex;
+	justify-content: center;
 	align-items: center;
-	color: #FFFFFF;
 }
 
-#price {
+.content-background:first-child>div[name=first-game]>div[name=gray-block]>p[name=price] {
 	position: absolute;
-	font-family: 'Montserrat';
-	color: #FFF;
+	right: 3%;
+}
+
+.content-background:first-child>div[name=second-and-third-game] {
+	display: flex;
+	flex-direction: column;
+	row-gap: 28px;
+	position: absolute;
+	right: 2%;
+	margin-top: 2%;
+	top: 0;
+}
+
+.content-background:first-child>div[name=second-and-third-game]>div[name=third-game],
+	.content-background:first-child>div[name=second-and-third-game]>div[name=second-game],
+	.content-background:first-child>div[name=first-game] {
+	position: relative;
+}
+
+.content-background:first-child>div[name=second-and-third-game]>div[name=third-game]:hover::after,
+	.content-background:first-child>div[name=second-and-third-game]>div[name=second-game]:hover::after,
+	.content-background:first-child>div[name=first-game]:hover::after {
+	content: attr(data-title);
+	position: absolute;
+	left: 0;
+	right: 0;
 	top: 0px;
-	left: 486px;
-	width: 100px;
-}
-
-#second-game-photo {
-	position: absolute;
-	width: 452px;
-	height: 182px;
-	left: 684px;
-	top: 23px;
-}
-
-#second-gray-rectangle {
-	position: absolute;
-	width: 452px;
-	height: 62px;
-	left: 684px;
-	top: 205px;
-	background: #606060;
-}
-
-#second-gray-rectangle>p {
-	position: absolute;
-	font-family: 'Montserrat';
-	font-style: normal;
-	font-weight: 800;
-	color: #FFF;
+	z-index: 1;
+	background: rgba(0, 42, 167, 0.6);
+	color: #fff;
 	text-align: center;
-	top: 4px;
-	left: 371px;
-	font-weight: 800;
+	font-family: Arial, sans-serif;
+	font-size: 11px;
+	padding: 5px 10px;
 }
 
-#third-game-photo {
-	position: absolute;
+.content-background:first-child>div[name=second-and-third-game]>div[name=third-game]>img,
+	.content-background:first-child>div[name=second-and-third-game]>div[name=second-game]>img {
 	width: 451px;
 	height: 180px;
-	left: 685px;
-	top: 284px;
 }
 
-#third-gray-rectangle {
-	position: absolute;
-	width: 452px;
-	height: 43px;
-	left: 685px;
-	top: 449px;
-	background: #606060;
-}
-
-#third-gray-rectangle>p {
-	position: absolute;
-	width: 99px;
-	height: 27px;
-	left: 327px;
-	top: -10px;
-	font-family: 'Montserrat';
-	font-style: normal;
-	font-weight: 700;
-	font-size: 17px;
-	line-height: 21px;
-	display: flex;
+.content-background:first-child>div[name=second-and-third-game]>div[name=second-game]>div[name=gray-block],
+	div[name=third-game]>div[name=gray-block] {
+	background-color: #606060;
+	height: 40px;
+	width: 451px;
 	align-items: center;
-	color: #FFFFFF;
+	display: flex;
 }
 
-#second-container {
-	position: relative;
-	width: 1170px;
-	height: 530px;
-	margin: auto;
-	top: 260px;
-	background: #000;
-	border-radius: 20px;
-	margin-bottom: 30%;
-}
-
-#cd_project_logo {
+.content-background:first-child>div[name=second-and-third-game]>div[name=second-game]>div[name=gray-block]>p,
+	div[name=third-game]>div[name=gray-block]>p {
 	position: absolute;
-	width: 111px;
-	height: 106px;
-	left: 35px;
-	top: 30px;
-}
-
-iframe {
-	margin-left: 28%;
-	margin-top: 3%;
-}
-
-#description {
-	position: absolute;
-	width: 282px;
-	top: 248px;
-	left: 18px;
-}
-
-#genre-description {
-	position: absolute;
-	width: 275px;
-	top: 151px;
-	left: 18px;
-}
-
-#game-name {
-	position: absolute;
-	top: 60px;
-	left: 156px;
+	right: 3%
 }

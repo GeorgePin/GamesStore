@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="static/styles/footer.css" type="text/css" />
-<title>Insert title here</title>
 </head>
 <footer></footer>
 </html>

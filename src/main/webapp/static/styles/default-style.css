@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+p[class=first-paragraph-font] {
+	font-family: 'Montserrat';
+	font-size: 17px;
+	font-weight: 700;
+	color: #fff;
+	margin: 0;
+}
+
+p[class=second-paragraph-font] {
+	font-family: 'Montserrat';
+	font-weight: 500;
+	color: #fff;
+	font-size: 26px;
+	margin: 0;
+}

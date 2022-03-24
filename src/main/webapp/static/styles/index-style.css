@@ -4,7 +4,11 @@
 
 body {
 	background: linear-gradient(298.33deg, #FFB800 42.18%, #FBD03B 70.66%);
-	margin-left: 0px;
+	margin: 0;
+}
+
+main {
+	height: 80%;
 }
 
 #text-heading {
