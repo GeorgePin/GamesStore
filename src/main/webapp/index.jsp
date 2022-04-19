@@ -1,22 +1,45 @@
 <%@page pageEncoding="UTF-8" contentType="text/html; charset=UTF-8"%>
 <%@ page isELIgnored="false"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<c:set var="currentPage" value="index.jsp" scope="session" />
 <html>
 <head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
 <title>Главная страница</title>
+
 <link rel="stylesheet" href="static/styles/index-style.css" type="text/css" />
- <link rel="shortcut icon" href="static/images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="static/images/favicon.ico" type="image/x-icon">
+
+<link rel="stylesheet" media="screen and (min-width: 361px)" href="static/styles/default-style.css"
+	type="text/css" />
+<link rel="stylesheet" media="screen and (min-width: 361px)"
+	href="static/styles/desktop-header-style.css" type="text/css" />
+
+<link rel="stylesheet" media="screen and (max-width: 360px)"
+	href="static/styles/default-mobile-style.css" type="text/css" />
+<link rel="stylesheet" media="screen and (max-width: 360px)"
+	href="static/styles/mobile-header-style.css" type="text/css" />
 </head>
 <body>
-	<jsp:include page="header.jsp"></jsp:include>
-	<main>
-		<h1 id="text-heading">Устал от дисков?</h1>
-		<p id="main-text">Онлайн-магазин видеоигр G&F подарит тебе возможность играть в любимые игры
-			всего за пару твоих кликов!</p>
-		<div id="start-button">Стартуем</div>
-		<img id="joystick-photo" src="static/images/joystick.png" alt="photo of joystick">
-	</main>
+	<div id="desktop-container">
+		<jsp:include page="desktop-header.jsp"></jsp:include>
+		<main>
+			<div id="text-content">
+				<jsp:include page="main-page-text.jsp"></jsp:include>
+				<button id="start-btn" onclick="location.href='shop.jsp'">Стартуем</button>
+			</div>
+			<img id="joystick-photo" src="static/images/joystick.png" alt="photo of joystick">
+		</main>
+	</div>
+	<div id="mobile-container">
+		<jsp:include page="mobile-header.jsp"></jsp:include>
+		<main>
+			<jsp:include page="main-page-text.jsp"></jsp:include>
+			<img id="joystick-photo" src="static/images/joystick.png" alt="photo of joystick">
+			<button id="start-btn" onclick="location.href='shop.jsp'">Стартуем</button>
+		</main>
+	</div>
 	<jsp:include page="footer.jsp"></jsp:include>
 </body>
 </html>

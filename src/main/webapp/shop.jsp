@@ -1,16 +1,27 @@
 <%@page pageEncoding="UTF-8" contentType="text/html; charset=UTF-8"%>
 <%@ page isELIgnored="false"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<c:set var="currentPage" value="shop.jsp" scope="session" />
 <html>
 <head>
 <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
 <title>Магазин</title>
-<link rel="stylesheet" href="static/styles/default-style.css" type="text/css" />
+
 <link rel="stylesheet" href="static/styles/shop-style.css" type="text/css" />
 <link rel="shortcut icon" href="static/images/favicon.ico" type="image/x-icon">
+
+<link rel="stylesheet" media="screen and (min-width: 361px)" href="static/styles/default-style.css"
+	type="text/css" />
+<link rel="stylesheet" media="screen and (min-width: 361px)"
+	href="static/styles/desktop-header-style.css" type="text/css" />
+
+<link rel="stylesheet" media="screen and (max-width: 360px)"
+	href="static/styles/default-mobile-style.css" type="text/css" />
+<link rel="stylesheet" media="screen and (max-width: 360px)"
+	href="static/styles/mobile-header-style.css" type="text/css" />
 </head>
 <body>
-	<jsp:include page="header.jsp"></jsp:include>
+	<jsp:include page="desktop-header.jsp"></jsp:include>
 	<main>
 		<div class="content-background">
 			<div name="first-game" data-title="%Special offer! Wow!%">

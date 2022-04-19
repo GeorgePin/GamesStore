@@ -1,7 +1,9 @@
 eclipse.preferences.version=1
 encoding//src/main/webapp/about-us.jsp=UTF-8
 encoding//src/main/webapp/contacts.jsp=UTF-8
-encoding//src/main/webapp/header.jsp=UTF-8
+encoding//src/main/webapp/desktop-header.jsp=UTF-8
 encoding//src/main/webapp/index.jsp=UTF-8
+encoding//src/main/webapp/main-page-text.jsp=UTF-8
 encoding//src/main/webapp/shop.jsp=UTF-8
+encoding//src/main/webapp/static/styles/desktop-header-style.css=UTF-8
 encoding/<project>=UTF-8

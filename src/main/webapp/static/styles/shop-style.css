@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
 body {
 	background: linear-gradient(298.33deg, #FFB800 42.18%, #FBD03B 70.66%);
 	margin: 0;
