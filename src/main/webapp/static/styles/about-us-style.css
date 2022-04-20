@@ -1,111 +1,65 @@
 @charset "UTF-8";
 
-@import url('http://fonts.cdnfonts.com/css/montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
 
 body {
 	background: linear-gradient(298.33deg, #FFB800 42.18%, #FBD03B 70.66%);
 }
 
 main {
-	height: 90%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+	width: 100%;
+	column-gap: 12%;
 }
 
-#robot-photo {
-	position: absolute;
-	width: 366px;
-	height: 477px;
-	left: 850px;
-	top: 80px;
+#page-text {
+	margin-top: 3%;
+	display: flex;
+	flex-direction: column;
+	row-gap: 4%;
+	width: 350px;
+	height: 100%;
 }
 
 #robot-circle {
 	position: absolute;
-	width: 652px;
-	height: 608px;
-	left: 750px;
-	top: 200px;
-	background: #CEE061;
-	filter: blur(250px);
-	top: 115px;
+	width: 500px;
+	height: 500px;
+	left: 790px;
+	filter: blur(100px);
+	top: 120px;
 	z-index: -1;
+	background: #CEE061;
 }
 
-#years-on-market-number {
-	position: absolute;
-	width: 45px;
-	height: 52px;
-	left: 212px;
-	top: 90px;
-	font-family: Montserrat;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 72px;
-	line-height: 88px;
-	display: flex;
-	align-items: center;
-	color: #000000;
+@media only screen and (min-width: 361px) {
+	#mobile-container {
+		display: none;
+	}
+	main {
+		height: 80%;
+	}
 }
 
-#years-on-market-text {
-	position: absolute;
-	width: 280px;
-	height: 44px;
-	left: 215px;
-	top: 140px;
-	font-family: Montserrat;
-	font-style: normal;
-	font-weight: 300;
-	font-size: 36px;
-	line-height: 44px;
-	display: flex;
-	align-items: center;
-	color: #000000;
-}
-
-#copies-sold-digit {
-	position: absolute;
-	width: 353px;
-	height: 74px;
-	left: 215px;
-	top: 250px;
-	font-family: Montserrat;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 72px;
-	line-height: 88px;
-	display: flex;
-	align-items: center;
-	color: #000000;
-}
-
-#copies-sold-text {
-	position: absolute;
-	width: 318px;
-	height: 47px;
-	left: 215px;
-	top: 290px;
-	font-family: Montserrat;
-	font-style: normal;
-	font-weight: 300;
-	font-size: 36px;
-	line-height: 44px;
-	display: flex;
-	align-items: center;
-	color: #000000;
-}
-
-p {
-	position: absolute;
-	width: 525px;
-	height: 269px;
-	left: 215px;
-	top: 410px;
-	font-family: Montserrat;
-	font-style: normal;
-	font-weight: 275;
-	font-size: 24px;
-	line-height: 29px;
-	display: flex;
-	align-items: center;
-	color: #000000;
+@media only screen and (max-width: 360px) {
+	#desktop-container {
+		display: none;
+	}
+	main {
+		height: 86%;
+		flex-direction: column;
+		align-items: center;
+		justify-content: none;
+	}
+	#mobile-text-container {
+		display: flex;
+		flex-direction: row;
+	}
+	#robot-photo {
+		height: 100px;
+		width: 100px;
+	}
 }

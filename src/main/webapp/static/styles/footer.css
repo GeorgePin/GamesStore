@@ -10,8 +10,47 @@ footer {
 	left: 0px;
 }
 
+.social-media-icon {
+	width: 28px;
+	height: 28px;
+}
+
+.social-media-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	column-gap: 4%;
+}
+
+.social-media-item {
+	display: flex;
+	flex-direction: row;
+	column-gap: 10%;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+social-media-item.div-link {
+	display: flex;
+	flex-direction: row;
+	column-gap: 10%;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	cursor: pointer;
+}
+
 @media only screen and (max-width: 360px) {
 	footer {
 		height: 7%;
+	}
+	.social-media-container p {
+		display: none;
+	}
+	.social-media-container {
+		justify-content: space-evenly;
 	}
 }

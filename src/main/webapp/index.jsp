@@ -26,6 +26,7 @@
 		<jsp:include page="desktop-header.jsp"></jsp:include>
 		<main>
 			<div id="text-content">
+				<p>Тут был а-сайд! (см. гитхаб)</p>
 				<jsp:include page="main-page-text.jsp"></jsp:include>
 				<button id="start-btn" onclick="location.href='shop.jsp'">Стартуем</button>
 			</div>
@@ -33,7 +34,8 @@
 		</main>
 	</div>
 	<div id="mobile-container">
-		<jsp:include page="mobile-header.jsp"></jsp:include>
+		<%-- 	<jsp:include page="mobile-header.jsp"></jsp:include>  --%>
+		<jsp:include page="hamburger-header.jsp"></jsp:include>
 		<main>
 			<jsp:include page="main-page-text.jsp"></jsp:include>
 			<img id="joystick-photo" src="static/images/joystick.png" alt="photo of joystick">
@@ -41,5 +43,6 @@
 		</main>
 	</div>
 	<jsp:include page="footer.jsp"></jsp:include>
+	<script src="static/js/hamburger-menu.js"></script>
 </body>
 </html>

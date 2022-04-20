@@ -7,6 +7,29 @@ body {
 	margin: 0;
 }
 
+.small-gray-block {
+	display: flex;
+	width: 451px;
+	height: 40px;
+	background: #606060;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.small-gray-block>* {
+	margin-right: 6%;
+}
+
+.gray-block {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	column-gap: 50%;
+	width: 610px;
+	height: 62px;
+	background: #606060;
+}
+
 main {
 	display: flex;
 	flex-direction: column;
@@ -15,75 +38,142 @@ main {
 }
 
 .content-background {
-	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
 	width: 1170px;
 	height: 530px;
 	background: #000;
 	border-radius: 20px;
 }
 
-.content-background:first-child {
+.inner-container {
+	display: flex;
+	flex-direction: row;
+}
+
+#first-container {
 	margin-top: 5%;
+	column-gap: 3%;
 }
 
-.content-background:last-child {
+#second-container {
+	column-gap: 2%;
+}
+
+#third-container {
+	column-gap: 5%;
+}
+
+#last-container {
 	margin-bottom: 5%;
+	column-gap: 15%;
 }
 
-.content-background:first-child>div[name=first-game] {
-	margin-left: 2%;
-	margin-top: 2%;
-	width: 52.2%;
+.game {
+	display: flex;
+	flex-direction: column;
 }
 
-.content-background:first-child>div[name=first-game]>img {
+#third-game-img, #second-game-img {
+	width: 451px;
+	height: 180px;
+}
+
+#first-game-img {
 	width: 610px;
 	height: 408px;
 }
 
-.content-background:first-child>div[name=first-game]>div[name=gray-block] {
-	display: flex;
-	align-items: center;
-	width: 610px;
-	height: 62px;
-	background: #606060;
+.small-game-img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
 }
 
-.content-background:first-child>div[name=first-game]>div[name=gray-block]>div[name=discount-block] {
+.slider-item {
+	width: 714px;
+	height: 463px;
+}
+#slider-container .slider-item {
+    animation-name: fade;
+    animation-duration: 0.5s;
+}
+@keyframes fade {
+    from {
+        opacity: 0.5
+    }
+    to {
+        opacity: 1
+    }
+}
+/* Кнопки вперед и назад */
+/* #slider-container .previous, #slider-container .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+#slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+При наведении на кнопки добавляем фон кнопок
+#slider .previous:hover,
+#slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+} */
+
+div[name=second-and-third-game] {
+	height: 100%;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	row-gap: 5%;
+}
+
+div[class=discount-block] {
 	width: 194px;
 	height: 49.09px;
 	background: #709B00;
 	border-radius: 20px;
-	margin-left: 1%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.content-background:first-child>div[name=first-game]>div[name=gray-block]>p[name=price] {
-	position: absolute;
-	right: 3%;
+.game-image-and-name {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 20%;
+	width: 100%;
+	justify-content: flex-start;
+	column-gap: 5%;
 }
 
-.content-background:first-child>div[name=second-and-third-game] {
+.game-description {
 	display: flex;
 	flex-direction: column;
-	row-gap: 28px;
-	position: absolute;
-	right: 2%;
-	margin-top: 2%;
-	top: 0;
+	width: 300px;
+	height: 75%;
+	justify-content: center;
+	row-gap: 4%;
 }
 
-.content-background:first-child>div[name=second-and-third-game]>div[name=third-game],
-	.content-background:first-child>div[name=second-and-third-game]>div[name=second-game],
-	.content-background:first-child>div[name=first-game] {
+div[name=first-game], div[class=game] {
 	position: relative;
 }
 
-.content-background:first-child>div[name=second-and-third-game]>div[name=third-game]:hover::after,
-	.content-background:first-child>div[name=second-and-third-game]>div[name=second-game]:hover::after,
-	.content-background:first-child>div[name=first-game]:hover::after {
+div[name=first-game]:hover::after, div[class=game]:hover::after {
 	content: attr(data-title);
 	position: absolute;
 	left: 0;
@@ -94,27 +184,33 @@ main {
 	color: #fff;
 	text-align: center;
 	font-family: Arial, sans-serif;
-	font-size: 11px;
+	font-size: 18px;
 	padding: 5px 10px;
 }
 
-.content-background:first-child>div[name=second-and-third-game]>div[name=third-game]>img,
-	.content-background:first-child>div[name=second-and-third-game]>div[name=second-game]>img {
-	width: 451px;
-	height: 180px;
+#back-to-top {
+	width: 40px;
+	line-height: 40px;
+	overflow: hidden;
+	z-index: 999;
+	display: none;
+	cursor: pointer;
+	-moz-transform: rotate(270deg);
+	-webkit-transform: rotate(270deg);
+	-o-transform: rotate(270deg);
+	-ms-transform: rotate(270deg);
+	transform: rotate(270deg);
+	position: fixed;
+	bottom: 50px;
+	right: 0;
+	background-color: #DDD;
+	color: #555;
+	text-align: center;
+	font-size: 30px;
+	text-decoration: none;
 }
 
-.content-background:first-child>div[name=second-and-third-game]>div[name=second-game]>div[name=gray-block],
-	div[name=third-game]>div[name=gray-block] {
-	background-color: #606060;
-	height: 40px;
-	width: 451px;
-	align-items: center;
-	display: flex;
-}
-
-.content-background:first-child>div[name=second-and-third-game]>div[name=second-game]>div[name=gray-block]>p,
-	div[name=third-game]>div[name=gray-block]>p {
-	position: absolute;
-	right: 3%
+#back-to-top:hover {
+	background-color: #ffff00;
+	color: #000;
 }

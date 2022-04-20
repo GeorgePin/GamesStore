@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+@import url('http://fonts.cdnfonts.com/css/montserrat');
+
+.closeIcon {
+	color: #FFF;
+	font-size: 80px;
+	display: none;
+}
+
+.bar {
+	width: 35px;
+	height: 5px;
+	background-color: #FFF;
+	margin: 6px 0;
+}
+
+.hamburger {
+	z-index: 100;
+}
+
+header {
+	display: flex;
+	background: #000;
+	justify-content: space-around;
+	align-items: center;
+	height: 7%;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.menuItem {
+	display: block;
+	margin: 2rem 4rem;
+	font-size: 1.8rem;
+	color: white;
+	text-decoration: none;
+}
+
+.menuItem:hover {
+	text-decoration: underline;
+}
+
+.menu {
+	position: fixed;
+	transform: translateY(-100%);
+	transition: transform 0.2s;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 99;
+	background: black;
+	color: white;
+	list-style: none;
+	padding-top: 4rem;
+}
+
+.showMenu {
+	transform: translateY(0);
+}

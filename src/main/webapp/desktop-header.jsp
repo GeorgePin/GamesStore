@@ -2,7 +2,7 @@
 <%@ page isELIgnored="false"%>
 <header id="grid">
 	<div></div>
-	<div class="header-content" style="cursor: pointer;" onclick="location.href='index.jsp'">
+	<div class="header-content div-link" onclick="location.href='index.jsp'">
 		<img id="logo-photo" src="static/images/logo-photo.png" alt="photo of logo" />
 		<h1 class="white-text">G&F</h1>
 	</div>
