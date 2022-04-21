@@ -16,12 +16,9 @@ main {
 }
 
 #page-text {
-	margin-top: 3%;
 	display: flex;
 	flex-direction: column;
-	row-gap: 4%;
-	width: 350px;
-	height: 100%;
+	height: 80%;
 }
 
 #robot-circle {
@@ -42,6 +39,11 @@ main {
 	main {
 		height: 80%;
 	}
+	#page-text {
+		width: 350px;
+		margin-top: 3%;
+		row-gap: 4%;
+	}
 }
 
 @media only screen and (max-width: 360px) {
@@ -49,17 +51,20 @@ main {
 		display: none;
 	}
 	main {
+		display: block;
 		height: 86%;
-		flex-direction: column;
-		align-items: center;
-		justify-content: none;
-	}
-	#mobile-text-container {
-		display: flex;
-		flex-direction: row;
 	}
 	#robot-photo {
-		height: 100px;
-		width: 100px;
+		height: 195px;
+		width: 163px;
+	}
+	#robot-container {
+		display: flex;
+		justify-content: center;
+	}
+	#page-text {
+		width: 235px;
+		row-gap: 2%;
+		margin-left: 20%;
 	}
 }

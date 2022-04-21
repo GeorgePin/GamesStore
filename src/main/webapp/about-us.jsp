@@ -43,21 +43,19 @@
 	<div id="mobile-container">
 		<jsp:include page="mobile-header.jsp"></jsp:include>
 		<main>
-			<img id="robot-photo" src="static/images/robot.png" alt="robot photo">
-			<div id="mobile-text-container">
-				<div>
-					<h1>7</h1>
-					<h6>Лет на рынке</h6>
-				</div>
-				<div>
-					<h1>4 735 901</h1>
-					<h6>Копий продано</h6>
-				</div>
+			<div id="robot-container">
+				<img id="robot-photo" src="static/images/robot.png" alt="robot photo">
 			</div>
-			<p class="first-paragraph-font">Компания G&F занимается продажей игр онлайн уже более 7 лет.
-				Мы сотрудничаем более чем со 160 компаниями по разработке игр и других электронных развлечений.
-				За это время у нас зарегистрировалосъ более полутора миллиона челевек и их с каждим днём всё
-				больше. Стань и ты участником сообщества G&F !</p>
+			<div id="page-text">
+				<h1>7</h1>
+				<p class="first-paragraph-font">Лет на рынке</p>
+				<h1>4 735 901</h1>
+				<p class="first-paragraph-font">Копий продано</p>
+				<p class="first-paragraph-font">Компания G&F занимается продажей игр онлайн уже более 7 лет.
+					Мы сотрудничаем более чем со 160 компаниями по разработке игр и других электронных развлечений.
+					За это время у нас зарегистрировалосъ более полутора миллиона челевек и их с каждим днём всё
+					больше. Стань и ты участником сообщества G&F !</p>
+			</div>
 		</main>
 	</div>
 	<jsp:include page="footer.jsp"></jsp:include>
